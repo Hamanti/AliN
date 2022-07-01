@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AliN - Разработка сайтов</title>
+  <title>Knime - Разработка сайтов</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,14 +16,14 @@
   <div class="header">
     <div class="header-block section">
       <div class="logo">
-        <div class="logo__cercle">A</div>
-        <div class="logo__title">AliN</div>
+        <div class="logo__cercle">K</div>
+        <div class="logo__title">Knime</div>
       </div>
       <div class="header-block__nav">
         <a href="#" class="header-block__nav-item">Портфолио</a>
         <a href="#" class="header-block__nav-item">Контакты</a>
         <a href="#" class="header-block__nav-item">Отзывы</a>
-        <button class="header-block__nav-button">Оставить заявку</button>
+        <button class="header-block__nav-button" onclick="openModal()">Оставить заявку</button>
       </div>
     </div>
     
@@ -74,7 +74,7 @@
         <div class="about-block__skills">
           <div class="about-block__skills-title">Наши умения - Ваша радость</div>
           <div class="about-block__skills-subtitle">HTML, CSS, JS, WordPress и многое другое!</div>
-          <button class="about-block__skills-button">Оставить заявку</button>
+          <button class="about-block__skills-button" onclick="openModal()">Оставить заявку</button>
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@
           </div> <!-- 2 -->
 
           <div class="comment-block__cards-item">
-            <div class="comment-block__cards-content">Спасибо AliN’y за сайт. Теперь я буду работать с этими ребят
+            <div class="comment-block__cards-content">Спасибо Knime за сайт. Теперь я буду работать с этими ребят
               ами на постойнной основе, как же я долго вас искал!</div>
               <div class="comment-block__cards-author">Дмитрий</div>
           </div> <!-- 3 -->
@@ -137,7 +137,7 @@
           </div> <!-- 4 -->
 
           <div class="comment-block__cards-item">
-            <div class="comment-block__cards-content">Я очень доволен выполненной работой команды AliN.
+            <div class="comment-block__cards-content">Я очень доволен выполненной работой команды Knime.
                Эти ребята делают вещи. Обращайтесь к ним, и не мучайте себя)</div>
               <div class="comment-block__cards-author">Виталий</div>
           </div> <!-- 5 -->
@@ -164,13 +164,13 @@
       <div class="footer-block__send">
         <div class="footer-block__send-title">Хочешь оставить заявку?</div>
         <div class="footer-block__send-subtitle">Кликай по кнопке ниже, заполняй форму, и мы свяжемся с тобой!</div>
-        <button class="footer-block__send-button">Оставить заявку</button>
+        <button class="footer-block__send-button" onclick="openModal()">Оставить заявку</button>
       </div>
       <div class="footer-block__flex">
         <div class="footer-block__left">
           <div class="logo">
-            <div class="logo__cercle">A</div>
-            <div class="logo__title">AliN</div>
+            <div class="logo__cercle">K</div>
+            <div class="logo__title">Knime</div>
           </div>
         </div>
         <div class="footer-block__right">
@@ -181,10 +181,26 @@
     </div>
   </footer>
 
+  <div class="modal-app hide" id="modal">
+    <div class="modal-app__window hide" id="window">
+      <div class="modal-app__window-title">Заявка на <span class="blue">сайт</span></div>
+      <form action="#" class="modal-app__window-form">
+        <input type="text" placeholder="Как к вам обращаться..." class="modal-app__window-input">
+        <input type="text" placeholder="Напишите название мессенджера..." class="modal-app__window-input">
+        <input type="text" placeholder="Ник, номер или ID в мессенджере..." class="modal-app__window-input"> 
+        <button class="modal-app__window-button">Отправить заявку</button>
+      </form>
+      <button class="modal-app__button-close" onclick="openModal()">&times;</button>
+    </div>
+    <!-- /.modal-app-window -->
+  </div>
+  <!-- /.modal-app -->
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.maskedinput.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
   <script>
     new WOW().init();
   </script>
