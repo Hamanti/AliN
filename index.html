@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knime - Разработка сайтов</title>
+  <title>Hamanti - Разработка сайтов</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,13 +16,13 @@
   <div class="header">
     <div class="header-block section">
       <div class="logo">
-        <div class="logo__cercle">K</div>
-        <div class="logo__title">Knime</div>
+        <div class="logo__cercle">H</div>
+        <div class="logo__title">Hamanti</div>
       </div>
       <div class="header-block__nav">
-        <a href="#" class="header-block__nav-item">Портфолио</a>
+        <a href="#work" class="header-block__nav-item">Портфолио</a>
         <a href="#" class="header-block__nav-item">Контакты</a>
-        <a href="#" class="header-block__nav-item">Отзывы</a>
+        <a href="#comment" class="header-block__nav-item">Отзывы</a>
         <button class="header-block__nav-button" onclick="openModal()">Оставить заявку</button>
       </div>
     </div>
@@ -80,26 +80,26 @@
     </div>
     <!-- about-block section -->
 
-    <div class="work">
+    <div class="work" id="work">
       <div class="work-block section">
         <div class="work-block__title">Готовые проекты</div>
         <div class="work-block__subtitle">Посмотрите наши работы, они и вправду хорошие!</div>
         <div class="work-block__cards">
           <div class="work-block__cards-item">
             <div class="work-block__cards-img"><img src="img/work/img1.png" alt=""></div>
-            <button class="work-block__cards-button">Открыть сайт</button>
+            <a href="https://hamanti.github.io/Projects/" class="work-block__cards-button">Открыть сайт</a>
           </div>
           <div class="work-block__cards-item">
             <div class="work-block__cards-img"><img src="img/work/img2.png" alt=""></div>
-            <button class="work-block__cards-button">Открыть сайт</button>
+            <a href="https://hamanti.github.io/Finally-Site/" class="work-block__cards-button">Открыть сайт</a>
           </div>
           <div class="work-block__cards-item">
             <div class="work-block__cards-img"><img src="img/work/img3.png" alt=""></div>
-            <button class="work-block__cards-button">Открыть сайт</button>
+            <a href="https://hamanti.github.io/AllOrNothing/" class="work-block__cards-button">Открыть сайт</a>
           </div>
           <div class="work-block__cards-item">
             <div class="work-block__cards-img"><img src="img/work/img4.png" alt=""></div>
-            <button class="work-block__cards-button">Открыть сайт</button>
+            <a href="https://hamanti.github.io/ProjectTwoDays/" class="work-block__cards-button">Открыть сайт</a>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
     </div>
     <!-- /.work -->
 
-    <div class="comment">
+    <div class="comment" id="comment">
       <div class="comment-block section">
         <div class="comment-block__title">Отзывы от пользователей</div>
         <div class="comment-block__subtitle">Мы советаем прочитать пару из них, это увлекательно</div>
@@ -125,7 +125,7 @@
           </div> <!-- 2 -->
 
           <div class="comment-block__cards-item">
-            <div class="comment-block__cards-content">Спасибо Knime за сайт. Теперь я буду работать с этими ребят
+            <div class="comment-block__cards-content">Спасибо Hamanti за сайт. Теперь я буду работать с этими ребят
               ами на постойнной основе, как же я долго вас искал!</div>
               <div class="comment-block__cards-author">Дмитрий</div>
           </div> <!-- 3 -->
@@ -137,7 +137,7 @@
           </div> <!-- 4 -->
 
           <div class="comment-block__cards-item">
-            <div class="comment-block__cards-content">Я очень доволен выполненной работой команды Knime.
+            <div class="comment-block__cards-content">Я очень доволен выполненной работой команды Hamanti.
                Эти ребята делают вещи. Обращайтесь к ним, и не мучайте себя)</div>
               <div class="comment-block__cards-author">Виталий</div>
           </div> <!-- 5 -->
@@ -164,13 +164,16 @@
       <div class="footer-block__send">
         <div class="footer-block__send-title">Хочешь оставить заявку?</div>
         <div class="footer-block__send-subtitle">Кликай по кнопке ниже, заполняй форму, и мы свяжемся с тобой!</div>
-        <button class="footer-block__send-button" onclick="openModal()">Оставить заявку</button>
+        <div class="footer-block__flex-button">
+          <button class="footer-block__send-button" onclick="openModal()">Оставить заявку</button>
+        <button class="footer-block__send-button" onclick="openModal()">Контакты</button>
+        </div>
       </div>
       <div class="footer-block__flex">
         <div class="footer-block__left">
           <div class="logo">
-            <div class="logo__cercle">K</div>
-            <div class="logo__title">Knime</div>
+            <div class="logo__cercle">H</div>
+            <div class="logo__title">Hamanti</div>
           </div>
         </div>
         <div class="footer-block__right">
