@@ -731,6 +731,7 @@ body {
           align-items: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  width: 90%;
 }
 
 .modal-app__window-title {
@@ -756,6 +757,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  width: 100%;
   grid-gap: 19px;
 }
 
@@ -767,7 +769,8 @@ body {
   border: 1px solid #fff;
   border-radius: 5px;
   height: 50px;
-  min-width: 320px;
+  min-width: 90%;
+  width: 90%;
   padding-left: 26px;
 }
 
@@ -809,7 +812,7 @@ body {
   transition: 0.5s;
   width: 235px;
   color: #fff;
-  margin: 40px 102px 48px;
+  margin: 40px auto 48px;
 }
 
 .modal-app__window-button:hover {
