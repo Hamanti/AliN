@@ -4,6 +4,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -688,7 +690,7 @@ body {
 }
 
 .modal-app__button-close {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-radius: 50%;
@@ -820,6 +822,8 @@ body {
   width: 235px;
   color: #fff;
   margin: 40px auto 48px;
+  -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
 .modal-app__window-button:hover {
