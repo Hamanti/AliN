@@ -27,9 +27,15 @@ $('#send-sign').on('submit', function(event) {
     type: 'POST',
     data: $(this).serialize(),
     success: function(data) {
-      
     }
   });
-  var windowDlg = document.getElementById('modalWindow');
-  windowDlg.classList.add('hidden');
+  var modal = document.getElementById('modal');
+  var window = document.getElementById('window');
+  modal.classList.toggle('hide');
+  window.classList.toggle('hide');
+
+  var modal1 = document.getElementById('modal-success');
+  var window1 = document.getElementById('modal-success__window');
+  modal1.classList.toggle('hide');
+  window1.classList.toggle('hide');
 });
