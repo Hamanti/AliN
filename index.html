@@ -15,13 +15,13 @@
   
   <div class="header">
     <div class="header-block section">
-      <div class="logo">
+      <div class="logo wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
         <div class="logo__cercle">H</div>
         <div class="logo__title">Hamanti</div>
       </div>
-      <div class="header-block__nav">
+      <div class="header-block__nav wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
         <a href="#work" class="header-block__nav-item">Портфолио</a>
-        <a href="#" class="header-block__nav-item">Контакты</a>
+        <a class="header-block__nav-item" onclick="openModalContact()">Контакты</a>
         <a href="#comment" class="header-block__nav-item">Отзывы</a>
         <button class="header-block__nav-button" onclick="openModal()">Оставить заявку</button>
       </div>
@@ -35,11 +35,11 @@
   <main>
     <div class="display">
       <div class="display-block section">
-        <div class="display-block__title">Создайте индвидуальный <br><span class="blue">сайт</span> для себя и своих услуг.</div>
-        <div class="display-block__subtitle">Вам не нужны проблемы. Вам нужен сайт. Обратитесь к нам.</div>
+        <div class="display-block__title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Создайте индвидуальный <br><span class="blue">сайт</span> для себя и своих услуг.</div>
+        <div class="display-block__subtitle wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">Вам не нужны проблемы. Вам нужен сайт. Обратитесь к нам.</div>
         <div class="display-block__buttons">
-          <button class="display-block__button-one">Посмотреть работы</button>
-          <button class="display-block__button-two">Посмотреть отзывы</button>
+          <a href="#work"><button class="display-block__button-one">Посмотреть работы</button></a>
+          <a href="#comment"><button class="display-block__button-two">Посмотреть отзывы</button></a>
         </div>
         <div class="display-block__img"></div>
       </div>
@@ -52,19 +52,19 @@
         <div class="about-block__title">Позвольте нам воплотить ваши идеи в сайт</div>
         <div class="about-block__subtitle">Получите свой сайт быстро, и без лишних проблем</div>
         <div class="about-block__cards">
-          <div class="about-block__cards-item bgc-orange">
+          <div class="about-block__cards-item bgc-orange wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
             <div class="about-block__cards-img"><img src="img/about/svg1.svg" alt=""></div>
             <div class="about-block__cards-title">Безопасная оплата</div>
             <div class="about-block__cards-subtitle">Оплата работы происходит в несколько этапов. Обычно в 3. С готовым дизайном - 2 этапа.</div>
           </div>
           <!-- orange -->
-          <div class="about-block__cards-item bgc-perple">
+          <div class="about-block__cards-item bgc-perple wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
             <div class="about-block__cards-img"><img src="img/about/svg2.svg" alt=""></div>
             <div class="about-block__cards-title">Наши работы</div>
             <div class="about-block__cards-subtitle">Посмотрите наши работы, и вы сможете убедиться в качестве нашего продукта.</div>
           </div>
           <!-- perple -->
-          <div class="about-block__cards-item bgc-blue">
+          <div class="about-block__cards-item bgc-blue wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
             <div class="about-block__cards-img"><img src="img/about/svg3.svg" alt=""></div>
             <div class="about-block__cards-title">Маркетинг сайт</div>
             <div class="about-block__cards-subtitle">Этот сайт продает услуги, а есть ли у вас такой сайт? Мы поможем создать вам продающий сайт.</div>
@@ -85,19 +85,19 @@
         <div class="work-block__title">Готовые проекты</div>
         <div class="work-block__subtitle">Посмотрите наши работы, они и вправду хорошие!</div>
         <div class="work-block__cards">
-          <div class="work-block__cards-item">
+          <div class="work-block__cards-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
             <div class="work-block__cards-img"><img src="img/work/img1.png" alt=""></div>
-            <a href="https://hamanti.github.io/Projects/" class="work-block__cards-button">Открыть сайт</a>
+            <a href="https://hamanti.github.io/AllOrNothing/" class="work-block__cards-button">Открыть сайт</a>
           </div>
-          <div class="work-block__cards-item">
+          <div class="work-block__cards-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
             <div class="work-block__cards-img"><img src="img/work/img2.png" alt=""></div>
             <a href="https://hamanti.github.io/Finally-Site/" class="work-block__cards-button">Открыть сайт</a>
           </div>
-          <div class="work-block__cards-item">
+          <div class="work-block__cards-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">
             <div class="work-block__cards-img"><img src="img/work/img3.png" alt=""></div>
-            <a href="https://hamanti.github.io/AllOrNothing/" class="work-block__cards-button">Открыть сайт</a>
+            <a href="https://hamanti.github.io/Projects/" class="work-block__cards-button">Открыть сайт</a>
           </div>
-          <div class="work-block__cards-item">
+          <div class="work-block__cards-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
             <div class="work-block__cards-img"><img src="img/work/img4.png" alt=""></div>
             <a href="https://hamanti.github.io/ProjectTwoDays/" class="work-block__cards-button">Открыть сайт</a>
           </div>
@@ -151,7 +151,7 @@
           <div class="rew-block__title">Еще мы пишем статьи :)<br>
             Залетай к нам!</div>
           <div class="rew-block__subtitle">Выражая свои мысли, мы становимся ближе с клиентами</div>
-          <button class="rew-block__button">Перейти</button>
+          <a href="https://vk.com/studiocloz"><button class="rew-block__button">Перейти</button></a>
         </div>
       </div>
       <!-- /.rew-block section -->
@@ -166,7 +166,7 @@
         <div class="footer-block__send-subtitle">Кликай по кнопке ниже, заполняй форму, и мы свяжемся с тобой!</div>
         <div class="footer-block__flex-button">
           <button class="footer-block__send-button" onclick="openModal()">Оставить заявку</button>
-        <button class="footer-block__send-button" onclick="openModal()">Контакты</button>
+        <button class="footer-block__send-button"  onclick="openModalContact()">Контакты</button>
         </div>
       </div>
       <div class="footer-block__flex">
@@ -187,10 +187,10 @@
   <div class="modal-app hide" id="modal">
     <div class="modal-app__window hide" id="window">
       <div class="modal-app__window-title">Заявка на <span class="blue">сайт</span></div>
-      <form action="#" class="modal-app__window-form">
-        <input type="text" placeholder="Как к вам обращаться..." class="modal-app__window-input">
-        <input type="text" placeholder="Напишите название мессенджера..." class="modal-app__window-input">
-        <input type="text" placeholder="Ник, номер или ID в мессенджере..." class="modal-app__window-input"> 
+      <form action="#" class="modal-app__window-form" id="send-sign">
+        <input type="text" name="lname" placeholder="Как к вам обращаться..." class="modal-app__window-input">
+        <input type="text" name="messanger" placeholder="Напишите название мессенджера..." class="modal-app__window-input">
+        <input type="text" name="id" placeholder="Ник, номер или ID в мессенджере..." class="modal-app__window-input"> 
         <button class="modal-app__window-button">Отправить заявку</button>
       </form>
       <button class="modal-app__button-close" onclick="openModal()">&times;</button>
@@ -198,6 +198,38 @@
     <!-- /.modal-app-window -->
   </div>
   <!-- /.modal-app -->
+
+  <div class="modal-contact hide" id="contact">
+    <div class="modal-contact__window hide" id="contact-window">
+      <div class="modal-contact__window-title">Наши <span class="blue">контакты</span></div>
+      <div class="modal-contact__window-line"></div>
+      <div class="modal-contact__window-row">
+        <div class="modal-contact__window-name">Telegram</div>
+        <a href="https://t.me/ilnxr" class="modal-contact__window-number">ilnxr</a>
+      </div>
+      <div class="modal-contact__window-line"></div>
+      <div class="modal-contact__window-row">
+        <div class="modal-contact__window-name">ВКонтакте</div>
+        <a href="https://vk.com/knime" class="modal-contact__window-number">knime</a>
+      </div>
+      <div class="modal-contact__window-line"></div>
+      <div class="modal-contact__window-row">
+        <div class="modal-contact__window-name">WhatsApp</div>
+        <a href="https://wa.me/79083426941" class="modal-contact__window-number">+79083426941</a>
+      </div>
+      <div class="modal-contact__window-line"></div>
+      <button class="modal-contact__window-button" onclick="openModalContact()">Закрыть</button>
+    </div>
+    <!-- /.modal-contact__window -->
+  </div>
+  <!-- /.modal-contact -->
+
+  <div class="modal-success" id="modal-success">
+    <div class="modal-success__window" id="modal-success__window">
+      <div class="modal-success__window-title">Спасибо!<br><span class="blue">Заявка</span> отправлена.</div>
+      <button class="modal-success__window-button" onclick="closeSuccess()">Закрыть</button>
+    </div>
+  </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.maskedinput.js"></script>
